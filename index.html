@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt- BR"></html>
+<html>
+    <head>
+       <title>App Minha selfie</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link href="style.css" rel="stylesheet">
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+</head>
+ 
+<body class = "container">
+   <div>
+       <a href="" id="link" download="minhaSelfieLinda.png"></a>
+       <h1>Aplicativo: minha selfie por voz
+        <img id = "logo_img"src = "">
+        </h1>
+        <hr>
+        <h4 style="color:rgb(251, 250, 252);">Pressione permitir assim que o "pop - up" for exibido. Depois dê um comando de voz. </h4>
+
+        <div class = "form-group">
+            <h3>Diga "Tire minha selfie"</h3>
+            <label>Saída de voz: </label>
+            <textarea class="form-control" id="textbox"readonly="true"></textarea>
+        </div>
+        <p>Pressione o botão "iniciar"</p>
+
+        <button class="btn btn primary" onclick="start()">INICIAR</button>
+        <br>
+        <label>Sua webcam: </label>
+        <div id="camera"></div>
+        <label>Sua selfie será exibida aqui: </label>
+        <div id="result"></div>      
+   </div>
+   
+   <script src="main.js"></script>
+</body>
+</html>
